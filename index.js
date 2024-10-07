@@ -1,10 +1,10 @@
 // code your solution here
  function saturdayFun(activity="rollerskate"){
-    console.log(`This Saturday i want to ${activity}`)
+    return (`This Saturday I want to ${activity}`)
 
  }
-saturdayFun()
-saturdayFun("cook for family")
+console.log(saturdayFun())
+console.log(saturdayFun("cook for family"))
 
 //HOISTING 
 //JavaScript's ability to call functions before they appear in the code is called hoisting. For hoisting to work, the function must be defined using a function declaration.
@@ -13,4 +13,5 @@ saturdayFun("cook for family")
 const mondayWork = function(activity = "go to the office") {
     return `This Monday, I will ${activity}.`;
   };
-  
+  console.log(mondayWork())
+  console.log(mondayWork('work remotely'))
