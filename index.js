@@ -15,3 +15,17 @@ const mondayWork = function(activity = "go to the office") {
   };
   console.log(mondayWork())
   console.log(mondayWork('work remotely'))
+
+  function wrapAdjective(flair = "*") {
+    return function(adjective = "special") {
+      return `You are ${flair}${adjective}${flair}!`;
+    };
+  }
+  
+  // Example usage
+  const encouragingPromptFunction = wrapAdjective("!!!");
+  console.log(encouragingPromptFunction("a dedicated programmer")); 
+  // Output: "You are !!!a dedicated programmer!!!"
+  
+  console.log(wrapAdjective("%")("a dedicated programmer")); 
+  // Output: "You are %a dedicated programmer%!"
